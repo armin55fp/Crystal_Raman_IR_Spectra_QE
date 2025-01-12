@@ -4,11 +4,7 @@ Created on Mon Apr 18 10:49:27 2022
 
 @author: armin.taheri
 
-This code gathers all the output of all the supercell DFT calculations, creates the BORN file from the ph.out file, creates a Result folder and  calculates the IR Spectra in a frequency  range from Nu_min to Nu_max. 
-Make sure to update the Molecule name ("Molecule"), number of atoms ("natoms") and also the minimum and maximum frequency in the plot (Nu_min and Nu_max).
-
-Also, the following commands must be perfomrd IN THE LINUX SHELL before running the code:
-
+This code uses Phonopy-Spectroscopy package to create final Raman and IR spectra results.
 command 1:   source /mnt/cephfs/home/armin5/ARMIN_env/bin/activate
 command 2:   export PYTHONPATH=${PYTHONPATH}:/mnt/cephfs/home/armin5/ARMIN_env/bin/Phonopy-Spectroscopy-master
 command 3:   export PATH=${PATH}:/mnt/cephfs/home/armin5/ARMIN_env/bin/Phonopy-Spectroscopy-master/Scripts
